@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}Pemesanan{% endblock %}
+
+{% block content %}
+<h2>Pemesanan</h2>
+<div>
+    <center>
+		<h1> Ticketing Bus </h1>
+		<table>
+			<form method="post">
+				<tr>
+                    <td> No Bus :</td>
+                    <td>
+                    <select name="nobus">
+                        <option value="J001">J001</option>
+                         <option value="J002">J002</option>
+                         <option value="J003">J003</option>
+                         <option value="J004">J004</option>
+                         <option value="J005">J005</option>
+                         <option value="J006">J006</option>
+                    </select>
+                    </td>
+                </tr>
+				<tr>
+					<td> Tanggal : </td>
+					<td> <input type="date" name="tanggal" > </td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td align="right">
+						<input type="Reset" value="Reset">
+						<input type="Submit" value="Proses">
+					</td>
+				</tr>
+			</form>
+		</table>
+		</center>
+</div>
+{% endblock %}
